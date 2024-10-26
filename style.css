@@ -57,17 +57,36 @@ header p {
 
 /* Sidebar styling */
 .sidebar {
-    width: 15%; /* Adjusted width */
-    margin-right: 20px; /* Slightly left of center */
+    width: 15%; /* Sidebar width for image and icons */
     display: flex;
-    justify-content: flex-end; /* Move closer to content */
+    flex-direction: column; /* Stacks image and icons vertically */
+    align-items: center; /* Centers image and icons horizontally */
+    margin-right: 20px; /* Positions sidebar closer to main content */
 }
 
 .sidebar img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-left: 20px;
+    margin-bottom: 15px; /* Adds space below image for icons */
+}
+
+/* Social icons styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #e67e22;
 }
 
 /* Main content styling */
@@ -82,27 +101,6 @@ header p {
 
 .content p, .content ul {
     color: #e2e2e2;
-}
-
-/* Social icons styling for bottom positioning */
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer-icons a {
-    font-size: 1.5em;
-    margin: 0 10px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.footer-icons a:hover {
-    color: #e67e22;
 }
 
 /* Project post styling */
