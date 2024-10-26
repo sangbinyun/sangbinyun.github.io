@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #000000;
-    background-color: #e2e2e2;
+    background-color: #FBEAEB;
     margin: 0;
     padding: 0;
     line-height: 1.2;
@@ -15,7 +15,7 @@ nav {
     padding: 10px;
     position: absolute;
     top: 10px;
-    right: 10%; /* Centers it horizontally with a slight right bias */
+    right: 40%; /* Centers it horizontally with a slight right bias */
     transform: translateX(10%); /* Fine-tune the position slightly more toward the middle */
 }
 
@@ -26,7 +26,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #c57e3f;
+    color: #2E3C7E;
 }
 
 /* Header styling */
@@ -44,13 +44,13 @@ header h1 {
 
 header p {
     margin: 5px 0;
-    font-size: 0.8em;
+    font-size: 1.1em;
 }
 
 /* Container styling */
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0 auto;
     max-width: 35%; /* 30% margins on each side */
 }
@@ -66,8 +66,8 @@ header p {
 
 .sidebar img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 15px; /* Adds space below image for icons */
 }
 
@@ -86,13 +86,12 @@ header p {
 }
 
 .social-icons a:hover {
-    color: #e67e22;
+    color: #2E3C7E;
 } */
 
 .social-icons img {
     margin: 0 10px;
     vertical-align: middle;
-    filter: invert(100%); /* Makes the icons white, for dark backgrounds */
     transition: filter 0.3s ease;
 }
 
@@ -106,7 +105,7 @@ header p {
 }
 
 .content h2 {
-    color: #e67e22;
+    color: #2E3C7E;
     margin-top: 20px;
 }
 
@@ -116,7 +115,7 @@ header p {
 
 /* Project post styling */
 .project-post {
-    background-color: #e2e2e2;
+    background-color: #FBEAEB;
     padding: 20px;
     margin: 0 auto;
     border-radius: 8px;
@@ -124,7 +123,7 @@ header p {
 }
 
 .project-post h2 {
-    color: #e67e22;
+    color: #2E3C7E;
     margin-top: 0;
 }
 
@@ -133,10 +132,10 @@ header p {
 }
 
 .project-post a {
-    color: #e67e22;
+    color: #2E3C7E;
     text-decoration: none;
 }
 
 .project-post a:hover {
-    color: #e67e22;
+    color: #2E3C7E;
 }
