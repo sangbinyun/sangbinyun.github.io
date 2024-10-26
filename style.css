@@ -61,7 +61,7 @@ header p {
     display: flex;
     flex-direction: column; /* Stacks image and icons vertically */
     align-items: center; /* Centers image and icons horizontally */
-    margin-right: 10px; /* Positions sidebar closer to main content */
+    margin-right: 30px; /* Positions sidebar closer to main content */
 }
 
 .sidebar img {
