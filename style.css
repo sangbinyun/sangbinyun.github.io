@@ -38,13 +38,13 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.0em;
     color: #000000;
 }
 
 header p {
     margin: 5px 0;
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 
 /* Container styling */
@@ -78,7 +78,7 @@ header p {
     margin-top: 10px;
 }
 
-.social-icons a {
+/* .social-icons a {
     font-size: 1.5em;
     margin: 0 10px;
     color: #000000;
@@ -87,6 +87,17 @@ header p {
 
 .social-icons a:hover {
     color: #e67e22;
+} */
+
+.social-icons img {
+    margin: 0 10px;
+    vertical-align: middle;
+    filter: invert(100%); /* Makes the icons white, for dark backgrounds */
+    transition: filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: invert(70%) sepia(100%) saturate(500%) hue-rotate(340deg); /* Hover effect */
 }
 
 /* Main content styling */
