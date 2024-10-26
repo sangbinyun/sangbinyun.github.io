@@ -1,8 +1,8 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    color: #ffffff;
-    background-color: #1c1c1c;
+    color: #000000;
+    background-color: #cfcec7;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -15,28 +15,29 @@ nav {
     padding: 10px;
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 10px;
 }
 
 nav a {
-    margin: 0 15px;
-    color: #ffffff; /* Changed to white */
+    margin: 0 12px;
+    color: #000000; /* Changed to white */
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #e67e22;
+    color: #c57e3f;
 }
 
 /* Header styling */
 header {
-    text-align: left; /* Left align header */
+    text-align: left;
     padding: 20px;
+    margin-left: 10%;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #ffffff; /* Changed to white */
+    color: #000000; /* Changed to white */
 }
 
 .highlight {
@@ -46,44 +47,51 @@ h1 {
 /* Container styling */
 .container {
     display: flex;
-    margin: 20px;
     align-items: flex-start;
+    margin-left: 5%; /* Center-left alignment */
+    width: 85%;
 }
 
 /* Sidebar styling */
 .sidebar {
-    width: 20%; /* Reduced width */
-    margin-right: 30px; /* Move slightly left from the center */
+    width: 15%; /* Adjusted width */
+    margin-right: 20px; /* Slightly left of center */
+    display: flex;
+    justify-content: flex-end; /* Move closer to content */
 }
 
 .sidebar img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-bottom: 15px;
+    margin-left: 20px; /* Shift image slightly from the edge */
 }
 
-/* Social icons styling */
-.social-icons {
+/* Social icons styling for bottom positioning */
+.footer-icons {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.social-icons a {
+.footer-icons a {
     font-size: 1.5em;
     margin: 0 10px;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 
-.social-icons a:hover {
+.footer-icons a:hover {
     color: #f1c40f;
 }
 
 /* Main content styling */
 .content {
-    width: 75%; /* Main content adjusted for left bias */
+    width: 70%; /* Main content slightly biased left */
+    margin-left: 5%;
 }
 
 .main-content h2 {
@@ -104,10 +112,9 @@ h1 {
     text-decoration: none;
 }
 
-
 /* Project post styling */
 .project-post {
-    background-color: #333;
+    background-color: #cfcec7;
     padding: 20px;
     margin: 15px 0;
     border-radius: 8px;
@@ -119,7 +126,7 @@ h1 {
 }
 
 .project-post p {
-    color: #ffffff;
+    color: #000000;
 }
 
 .project-post a {
