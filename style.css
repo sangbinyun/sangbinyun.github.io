@@ -1,7 +1,7 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    color: #fbfffe;
+    color: #000000; /* fbfffe */
     background-color: #6d676e;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ nav {
 
 nav a {
     margin: 0 12px;
-    color: #fbfffe; /* Changed to white */
+    color: #000000; /* Changed to white */
     text-decoration: none;
 }
 
@@ -39,12 +39,49 @@ header {
 
 header h1 {
     font-size: 2.0em;
-    color: #fbfffe;
+    color: #000000;
 }
 
 header p {
     margin: 5px 0;
     font-size: 1.1em;
+}
+
+/* Sidebar styling for positioning on the left */
+.sidebar {
+    position: absolute;
+    left: 10%; /* Positions the sidebar slightly left of center */
+    top: 150px; /* Adjusts vertical positioning relative to main content */
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+/* Social icons styling */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    margin: 5px 0;
+    width: 25px;
+    height: 25px;
+    transition: filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: invert(70%) sepia(92%) saturate(580%) hue-rotate(339deg) brightness(96%) contrast(94%);
 }
 
 /* Container styling */
@@ -67,29 +104,9 @@ header p {
 
 .sidebar img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 15px; /* Adds space below image for icons */
-}
-
-/* Social icons styling */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.social-icons img {
-    margin: 0 5px;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    transition: filter 0.3s ease;
-}
-
-.social-icons img:hover {
-    filter: invert(58%) sepia(92%) saturate(580%) hue-rotate(339deg) brightness(96%) contrast(94%);
-    /* Changes icon to #faa916 color on hover */
 }
 
 /* Main content styling */
@@ -103,7 +120,7 @@ header p {
 }
 
 .content p, .content ul {
-    color: #fbfffe;
+    color: #000000;
 }
 
 /* Project post styling */
@@ -121,7 +138,7 @@ header p {
 }
 
 .project-post p {
-    color: #fbfffe;
+    color: #000000;
 }
 
 .project-post a {
