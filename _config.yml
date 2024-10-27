@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : # "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sangbin Yun"
@@ -114,15 +114,12 @@ analytics:
 # Site Author
 author:
   name             : "Sangbin Yun"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.png"
   bio              : "I am an **amazing** person."
   location         : "Seoul, South Korea"
   email            : "bin0113[at]korea.ac.kr"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:bin0113@korea.ac.kr"
-    - label: "GitHub"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/sangbin-yun-b0438223b"
     - label: "GitHub"
