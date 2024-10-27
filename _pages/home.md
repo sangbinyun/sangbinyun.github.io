@@ -2,9 +2,10 @@
 layout: single
 title: "Home"
 permalink: /
+author_profile: true
 ---
 
-# Welcome to My Website
+# Bio
 Hi, I'm Sangbin Yun. I am an amazing person based in Seoul, South Korea.
 
 - M.S. Student, Brain and Cognitive Engineering, Korea University
