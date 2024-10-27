@@ -1,10 +1,10 @@
 # main links
 main:
   - title: "Home"
-    url: https://sangbinyun.github.io/
+    url: /
   - title: "Projects"
     url: /year-archive/
   - title: "CV"
-    url: /docs_sangbin/cv.pdf
+    url: /cv.pdf
   - title: "About Me"
-    url: /docs_sangbin/aboutme.md
+    url: /about/
