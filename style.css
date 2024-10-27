@@ -1,8 +1,8 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    color: #000000; /* fbfffe */
-    background-color: #6d676e;
+    color: #6d676e; /* fbfffe */
+    background-color: #fbfffe;
     margin: 0;
     padding: 0;
     line-height: 1.2;
@@ -21,7 +21,7 @@ nav {
 
 nav a {
     margin: 0 12px;
-    color: #000000; /* Changed to white */
+    color: #6d676e; /* Changed to white */
     text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ header {
 
 header h1 {
     font-size: 2.0em;
-    color: #000000;
+    color: #6d676e;
 }
 
 header p {
@@ -68,15 +68,14 @@ header p {
 /* Social icons styling */
 .social-icons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: 10px;
 }
 
 .social-icons img {
     margin: 5px 0;
-    width: 25px;
-    height: 25px;
+    width: 5px;
+    height: 5px;
     transition: filter 0.3s ease;
 }
 
@@ -120,12 +119,12 @@ header p {
 }
 
 .content p, .content ul {
-    color: #000000;
+    color: #6d676e;
 }
 
 /* Project post styling */
 .project-post {
-    background-color: #6d676e;
+    background-color: #fbfffe;
     padding: 20px;
     margin: 0 auto;
     border-radius: 8px;
@@ -138,7 +137,7 @@ header p {
 }
 
 .project-post p {
-    color: #000000;
+    color: #6d676e;
 }
 
 .project-post a {
