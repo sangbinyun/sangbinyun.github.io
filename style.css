@@ -1,8 +1,8 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    color: #000000;
-    background-color: #FBEAEB;
+    color: #fbfffe;
+    background-color: #6d676e;
     margin: 0;
     padding: 0;
     line-height: 1.2;
@@ -15,18 +15,18 @@ nav {
     padding: 10px;
     position: absolute;
     top: 10px;
-    right: 100%; /* Centers it horizontally with a slight right bias */
+    right: 30%; /* Centers it horizontally with a slight right bias */
     transform: translateX(10%); /* Fine-tune the position slightly more toward the middle */
 }
 
 nav a {
     margin: 0 12px;
-    color: #000000; /* Changed to white */
+    color: #fbfffe; /* Changed to white */
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #2E3C7E;
+    color: #faa916;
 }
 
 /* Header styling */
@@ -39,7 +39,7 @@ header {
 
 header h1 {
     font-size: 2.0em;
-    color: #000000;
+    color: #fbfffe;
 }
 
 header p {
@@ -51,6 +51,7 @@ header p {
 .container {
     display: flex;
     justify-content: left;
+    text-align: left;
     margin: 0 auto;
     max-width: 35%; /* 30% margins on each side */
 }
@@ -61,13 +62,13 @@ header p {
     display: flex;
     flex-direction: column; /* Stacks image and icons vertically */
     align-items: center; /* Centers image and icons horizontally */
-    margin-right: 30px; /* Positions sidebar closer to main content */
+    margin-right: 50px; /* Positions sidebar closer to main content */
 }
 
 .sidebar img {
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 15px; /* Adds space below image for icons */
 }
 
@@ -78,19 +79,8 @@ header p {
     margin-top: 10px;
 }
 
-/* .social-icons a {
-    font-size: 1.5em;
-    margin: 0 10px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #2E3C7E;
-} */
-
 .social-icons img {
-    margin: 0 10px;
+    margin: 0 5px;
     width: 25px;
     height: 25px;
     vertical-align: middle;
@@ -98,7 +88,8 @@ header p {
 }
 
 .social-icons img:hover {
-    filter: invert(70%) sepia(100%) saturate(500%) hue-rotate(340deg); /* Hover effect */
+    filter: invert(58%) sepia(92%) saturate(580%) hue-rotate(339deg) brightness(96%) contrast(94%);
+    /* Changes icon to #faa916 color on hover */
 }
 
 /* Main content styling */
@@ -107,17 +98,17 @@ header p {
 }
 
 .content h2 {
-    color: #2E3C7E;
+    color: #faa916;
     margin-top: 20px;
 }
 
 .content p, .content ul {
-    color: #000000;
+    color: #fbfffe;
 }
 
 /* Project post styling */
 .project-post {
-    background-color: #FBEAEB;
+    background-color: #6d676e;
     padding: 20px;
     margin: 0 auto;
     border-radius: 8px;
@@ -125,19 +116,19 @@ header p {
 }
 
 .project-post h2 {
-    color: #2E3C7E;
+    color: #faa916;
     margin-top: 0;
 }
 
 .project-post p {
-    color: #000000;
+    color: #fbfffe;
 }
 
 .project-post a {
-    color: #2E3C7E;
+    color: #faa916;
     text-decoration: none;
 }
 
 .project-post a:hover {
-    color: #2E3C7E;
+    color: #faa916;
 }
