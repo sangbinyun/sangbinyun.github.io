@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "vite build",
-    "postbuild": "cp dist/index.html dist/404.html",
-    "deploy": "gh-pages -d dist"
+    "postbuild": "cp docs/index.html docs/404.html",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
