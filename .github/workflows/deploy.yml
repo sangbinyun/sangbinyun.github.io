@@ -1,4 +1,4 @@
-name: Deploy Vite site to GitHub Pages
+name: Build and Deploy to docs folder
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,9 +17,11 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Copy 404.html for SPA routing
-        run: cp dist/index.html dist/404.html
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+        run: cp docs/index.html docs/404.html
+      - name: Commit and push docs folder
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs
+          git commit -m "Deploy to docs folder [skip ci]" || echo "No changes to commit"
+          git push

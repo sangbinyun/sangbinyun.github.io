@@ -10,6 +10,9 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   base: "/",
+  build: {
+    outDir: "docs",
+  },  
   plugins: [
     react(),
     mode === 'development' &&
